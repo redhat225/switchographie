@@ -55,7 +55,7 @@
       <div class="column is-one-third has-text-centered is-centered">
            <div>
                <figure class="image is-96x96 is-inline-block">
-                 <img src="/webroot/img/home/asset-1.jpg" alt="">
+                 <img src="/webroot/img/home/asset-1.png" alt="">
                </figure>             
            </div> 
            <h2 class="is-size-5-widescreen is-size-6-mobile is-uppercase mar-top-50 is-font-700">
@@ -68,7 +68,7 @@
       <div class="column is-one-third has-text-centered is-centered">
            <div>
                <figure class="image is-96x96 is-inline-block">
-                 <img src="/webroot/img/home/asset-2.png" alt="">
+                 <img src="/webroot/img/home/asset-2-alt.png" alt="">
                </figure>             
            </div> 
            <h2 class="is-size-5-widescreen is-size-6-mobile is-uppercase mar-top-50 is-font-700">
