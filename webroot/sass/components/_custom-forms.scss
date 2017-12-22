@@ -1,0 +1,35 @@
+// custom form styles
+@mixin all-form-focus-border{
+				border-color:map-get($colors, 'brand-orange') !important;
+				box-shadow:none !important;
+}
+
+///focus all forms
+input,textarea{
+	&.is-focused,&.is-active{
+		@include all-form-focus-border;
+	}
+
+	&:focus,&:active{
+		@include all-form-focus-border;
+	}
+}
+
+/// top forms
+.field.switch-top-field{
+	& input,textarea{
+		background-color: #000;
+		border: none;
+		color: #fff;
+		font-family: map-get($fonts-family, 'second');
+		
+		&::placeholder{
+			color: #ccc;
+		}
+
+		&:focus{
+			border-color: transparent;
+			box-shadow:none;
+		}
+	}
+}

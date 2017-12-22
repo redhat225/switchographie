@@ -1,0 +1,60 @@
+//colors initialization
+.is-switch-orange{
+	color: $first;
+}
+
+.is-switch-orange-b{
+	background: $first;
+}
+
+.is-switch-black{
+	color: $second;
+}
+
+.is-swicth-black-b{
+	background: $second;
+}
+
+.is-switch-grey{
+	color: $third;
+}
+
+.is-swicth-grey-b{
+	background: $third;
+}
+
+//boxes initializations
+@each $side, $side-alias in map-get($sizes, 'sides'){
+	@if($side == 'line-height' or $side =='width' or $side == 'height'){
+			@for $i from 0 through 500{
+				 .#{$side-alias}-#{$i} {
+					#{$side}: #{$i}px !important;
+				 }
+			}
+	}@else{
+			@each $orientation, $orientation-alias in map-get($sizes, 'orientations'){
+					@for $i from 0 through 500{
+						.#{$side-alias}-#{$orientation-alias}-#{$i}{
+							#{$side}-#{$orientation}: #{$i}px !important;
+						}
+					}
+			}
+	}
+}
+
+
+//fonts initialization
+@each $font-weight in $fonts-weight{
+	.is-font-#{$font-weight} {
+		font-weight: $font-weight !important;
+	}
+}
+
+//font family initialization
+@each $rank, $family in $fonts-family{
+	.is-family-#{$rank} {
+		font-family: '#{$family}';
+	}
+}
+
+

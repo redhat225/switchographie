@@ -1,0 +1,9 @@
+$colors:(
+	'brand-orange': hsla(31, 88%, 68%, 1),
+	'brand-black': hsla(0, 0%, 3%, 1),
+	'brand-grey': hsla(0, 0%, 48%, 1),
+);
+
+$first: map-get($colors, 'brand-orange');
+$second: map-get($colors, 'brand-black');
+$third: map-get($colors, 'brand-grey');
