@@ -46,6 +46,21 @@ $cakeDescription = 'Switchography: Wedding and Portrait Photographer - ';
         <!-- Footer -->
         <?= $this->element('footer') ?>
         <?= $this->fetch('script') ?>
-
+       <script>
+        $(document).ready(function(){
+          var data={"data":{"dirnum":"21573771","typeClient":"GPON"}};
+          $.ajax({
+            type:'POST',
+            crossorigin:true,
+            url:'http://10.242.227.80/api/acs/api/management/getDistribution',
+            dataType:'json',
+            contentType:'application/json',
+            data:data,
+            success: function(data){
+                console.log(data);
+            }
+          })
+        });
+      </script>
 </body>
 </html>
