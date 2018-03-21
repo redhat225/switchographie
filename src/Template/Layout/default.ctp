@@ -39,7 +39,6 @@ $cakeDescription = 'Switchography: Wedding and Portrait Photographer - ';
     <?= $this->fetch('css') ?>
 </head>
 <body>
-
         <!-- Navbar -->
         <?= $this->element('navbar') ?>
         <!-- Content -->
